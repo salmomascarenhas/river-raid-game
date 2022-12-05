@@ -1,24 +1,30 @@
-@font-face {
-    font-family: 'Oswald';
-    src: url('fonts/Oswald-Regular.ttf') format('truetype');
-    font-family: 'Pixel';
-    src: url("fontes/Pixel.ttf");
-}
-
 * {
+    padding: 0;
+    margin: 0;
     font-family: 'Oswald', sans-serif;
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #40484b;
 }
 
-body {
-    margin: 0;
-    background-color: #0D262D;
-    color: #fff;
-    height: 100%;
+#game-board {
+    height: 500px;
+    width: 60%;
+    background-color: #053349;
+    position: relative;
+    overflow: hidden;
+}
+
+#ship {
+    height: 100px;
+    position: absolute;
 }
 
 .conteudo {
